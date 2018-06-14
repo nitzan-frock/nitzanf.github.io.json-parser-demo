@@ -2,7 +2,7 @@
 
 angular.module('myApp', [
     'ngRoute',
-    'view1',
+    'usersList',
     'myApp.view2',
     'myApp.version'
 ]);

@@ -1,0 +1,12 @@
+<h2>Users</h2>
+
+<div class="users-container">
+    <div ng-repeat="user in $ctrl.users">
+        <div class="user-container" id="{{user._id}}" ng-click="$ctrl.showPosts(user.index)">
+            <img class="user-pic" ng-src="{{user.picture}}">
+            <div class="user-name">{{user.name}}</div>
+        </div>
+    </div>
+</div>
+
+<br>

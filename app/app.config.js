@@ -7,8 +7,8 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.
-  when('/view1', {
-    template: '<view1></view1>'
+  when('/users', {
+    template: '<users-list></users-list>'
   }).
-  otherwise({redirectTo: '/view1'});
+  otherwise({redirectTo: '/users'});
 }]);
