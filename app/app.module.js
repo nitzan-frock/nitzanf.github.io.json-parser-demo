@@ -3,6 +3,6 @@
 angular.module('myApp', [
     'ngRoute',
     'usersList',
-    'myApp.view2',
+    'postsList',
     'myApp.version'
 ]);

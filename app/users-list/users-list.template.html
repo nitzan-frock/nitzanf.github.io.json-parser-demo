@@ -2,9 +2,12 @@
 
 <div class="users-container">
     <div ng-repeat="user in $ctrl.users">
-        <div class="user-container" id="{{user._id}}" ng-click="$ctrl.showPosts(user.index)">
+        <div class="user-container" id="{{user._id}}" ng-click="$ctrl.userClicked(user)">
             <img class="user-pic" ng-src="{{user.picture}}">
             <div class="user-name">{{user.name}}</div>
+        </div>
+        <div class="user-post-container" >
+            <posts-list user="$ctrl.currentUser" ng-if="$ctrl.currentUser === user"></posts-list>
         </div>
     </div>
 </div>
