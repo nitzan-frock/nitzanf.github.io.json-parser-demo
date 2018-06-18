@@ -67,12 +67,19 @@ body {
 
 .user-container {
   display: flex;
+  flex-direction: column;
   padding: 10px 0;
   border: 1px solid blue;
 }
 
+.user-details {
+  display: flex;
+  border: 1px solid orange
+}
+
 .user-name {
   margin: 0 10px;
+  user-select: none;
   border: 1px solid red;
 }
 
@@ -80,3 +87,6 @@ body {
   margin: 0 10px;
   border: 1px solid green;
 }
+
+/* Posts */
+

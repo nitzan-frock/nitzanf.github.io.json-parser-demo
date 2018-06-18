@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('usersList', ['postsList']);
+angular.module('usersList', ['user']);
