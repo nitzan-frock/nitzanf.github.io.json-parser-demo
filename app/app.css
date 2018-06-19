@@ -8,7 +8,6 @@ body {
   flex-flow: column;
   font-family: sans-serif;
   text-align: center;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -68,12 +67,12 @@ body {
 .user-container {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
   border: 1px solid blue;
 }
 
 .user-details {
   display: flex;
+  padding: 10px 0;
   border: 1px solid orange
 }
 
@@ -89,4 +88,12 @@ body {
 }
 
 /* Posts */
+.posts-container {
+  background-color: #E0E0E0;
+  padding-left: 20px;
+  text-align: left;
+}
 
+.post-title {
+  
+}

@@ -9,6 +9,8 @@ angular.
         controller: ['$http', function postsListController($http){
             let self = this;
 
-            console.log(self.posts);
+            self.$onChanges = function (changes) {
+                self.posts = angular.copy(changes.posts.currentValue);
+            }
         }]
     });

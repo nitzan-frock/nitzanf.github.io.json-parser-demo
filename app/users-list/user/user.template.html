@@ -1,9 +1,8 @@
 
-<div class="user-container" ng-click="$ctrl.userClicked()">
-    <div class="user-details">
+<div class="user-container">
+    <div class="user-details" ng-click="$ctrl.userClicked()">
             <img class="user-pic" ng-src="{{$ctrl.user.picture}}">
             <div class="user-name">{{$ctrl.user.name}}</div>
-            <a href="" ng-click="$ctrl.printName()">print name</a>
     </div>
-    <posts-list class="posts-container" ng-show="$ctrl.showPosts" posts="$ctrl.posts"></posts-list>
+    <posts-list class="posts-container" ng-show="$ctrl.showPosts" posts="$ctrl.user.posts"></posts-list>
 </div>

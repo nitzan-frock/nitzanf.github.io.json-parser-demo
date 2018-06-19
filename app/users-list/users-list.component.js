@@ -6,8 +6,6 @@ angular.
         controller: ['$http', function usersListController($http) {
             const self = this;
 
-            self.username = 'nitzan';
-
             $http.get('users/users.json').then(response => {
                 self.users = response.data;
             });
